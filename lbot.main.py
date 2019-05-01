@@ -4,6 +4,9 @@ import pdfcrowd
 import sys
 import datetime
 import time
+import os
+
+port = int(os.environ.get(“PORT”, 5000))
 
 #function defining
 def chkr1(a, b, c, d):
