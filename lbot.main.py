@@ -46,75 +46,26 @@ while True:
         prtMsg = "Numbers:  \n" + finalNumbers
         #Making HTML File
         htmlContent="""
-        <html>
-        <head>
-        <style>
-        body{
-        	font-family: Product Sans;
-            font-weight: bold;
-            text-align: center;
-            color: #23395d
-            }
-        #header{
-            font-size: 60px;
-            }
-        #nums{
-            font-size: 48px;
-            font-family: Helvetica;
-        }
-        .numberball{
-            width: 75px;
-            height: 75px;
-            border: 5px #23395d solid;
-            border-radius: 75px;
-            font-size: 48px;
-            background: #23395d;
-            margin: 10px;
-            display: inline-block;
-            box-shadow: 0px 2px 100px rgba(0,0,0,0.2);
-        }
-        .centernum{
-            text-align: center;
-            margin: 5px;
-            color: white;
-            display: inline-block;
-        }
-        .container{
-            display: inline-block;
-            margin: auto;
-        }
-        </style>
-        </head>
-        <body>
-        <p id="header">LottoBot</p>
-        <div class="container">
-        <p class="centernum numberball">"""+str(finalDraws[0])+"""</p>
-        <p class="centernum numberball">"""+str(finalDraws[1])+"""</p>
-        <p class="centernum numberball">"""+str(finalDraws[2])+"""</p>
-        <p class="centernum numberball">"""+str(finalDraws[3])+"""</p>
-        <p class="centernum numberball">"""+str(finalDraws[4])+"""</p>
-        <p class="centernum numberball">"""+str(finalDraws[5])+"""</p>
-        <!--        <div class="container">
-            <div class="numberball">
-                <p class="centernum">33</p>
-            </div>
-            <div class="numberball">
-                <p class="centernum">21</p>
-            </div>
-            <div class="numberball">
-                <p class="centernum">6</p>
-            </div>
-            <div class="numberball">
-                <p class="centernum">27</p>
-            </div>
-            <div class="numberball">
-                <p class="centernum">50</p>
-            </div>
-            <div class="numberball">
-                <p class="centernum">1</p>
-            </div>
-        </div>
-    -->""" 
+<html>
+<head>
+<style>
+body{
+	font-family: Helvetica;
+	text-align: center;
+	color: #23395d
+	}
+#header{
+	font-size: 60px;
+	}
+#nums{
+	font-size: 48px;
+	font-family: Helvetica;
+	}
+</style>
+</head>
+<body>
+<p id="header">LottoBot</p>
+<pre id="nums">Numbers:<br>""" + finalNumbers
         
         html_file = open("picTransform.html", "w")
         html_file.write(htmlContent)
