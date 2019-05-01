@@ -1,2 +1,4 @@
 facebook-sdk
 pdfcrowd
+gunicorn
+django
