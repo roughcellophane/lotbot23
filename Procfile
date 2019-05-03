@@ -1,1 +1,1 @@
-web: python lbot.main.py
+worker: python lbot.main.py --log-file -
